@@ -49,7 +49,7 @@ If you currently paste each name into Namecheap, TESS, EUIPO, X, and GitHub by h
     { "host": "lumenforge.dev", "available": true }
   ],
   "trademarks": [
-    { "registry": "USPTO", "available": true, "exactMatches": 0, "searchUrl": "https://tmsearch.uspto.gov/..." },
+    { "registry": "USPTO", "available": true, "exactMatches": 0, "similarMarks": 3, "liveMarks": [], "searchUrl": "https://tmsearch.uspto.gov/..." },
     { "registry": "EUIPO", "available": null, "note": "EUIPO has no public search API - open searchUrl to check manually", "searchUrl": "https://www.tmdn.org/tmview/..." }
   ],
   "socials": [
@@ -63,7 +63,9 @@ If you currently paste each name into Namecheap, TESS, EUIPO, X, and GitHub by h
 }
 ```
 
-`available: true` = free. `available: false` = taken. `available: null` = check could not be completed (service error, rate limit).
+`available: true` = free. `available: false` = taken. `available: null` = not checked automatically or check could not be completed - open the link to verify.
+
+> **Not legal clearance.** A USPTO `available: true` only means no *live* US mark with the *exact* same name. Similar or misspelled marks, marks in other countries, and unregistered (common-law) brands are not flagged - review `similarMarks` and talk to a trademark attorney before you file or launch.
 
 Real output from a verified run: [examples/sample-output.json](examples/sample-output.json).
 
@@ -185,7 +187,7 @@ Each `name-checked` charge covers one name across all enabled channels (up to 13
 ## Tips for best results
 
 - Candidate names should be 4+ characters — ultra-short names (3 chars) collide with dictionary words on socials
-- Trademark `available: true` is a strong signal but not legal advice — confirm with counsel before filing
+- Trademark `available: true` means no live exact-match US mark - a useful first filter, not legal advice. If `similarMarks` is above 0, open `searchUrl` and review them, then confirm with counsel before filing
 - DNS "available" means no DNS record. Some registered-but-parked domains resolve; some truly unregistered return ENOTFOUND. For purchase, confirm via WHOIS.
 - Social `available` relies on HTTP 404 — some platforms rate-limit and may return null; re-run skipped names
 
@@ -201,7 +203,7 @@ Each `name-checked` charge covers one name across all enabled channels (up to 13
 ## FAQ
 
 **Is a `true` trademark result legal clearance?**
-No. This is a first-pass screen using the public registries' bulk search APIs. Full clearance requires attorney review and conflict analysis across international classes.
+No. It is a first-pass screen against the USPTO register that only counts live marks with exactly the same name. It does not flag similar or misspelled marks, marks filed in other countries (EUIPO is a manual link), or unregistered common-law brands - any of which can block a filing or lead to a dispute. Full clearance requires attorney review and conflict analysis across classes and jurisdictions.
 
 **Why DNS instead of WHOIS?**
 WHOIS is rate-limited and inconsistent across registrars. DNS is instant and reliable as a first-pass signal. For final purchase, re-check via WHOIS or your registrar.
@@ -210,7 +212,7 @@ WHOIS is rate-limited and inconsistent across registrars. DNS is instant and rel
 X, GitHub and YouTube are checked automatically. Instagram (rate-limited) and TikTok (bot check) block most automated lookups, so they return `available: null` with a direct link to verify - never a guess. Reddit, Discord, Mastodon, Bluesky on the roadmap.
 
 **Why does my check return `available: null` sometimes?**
-Rate limits or temporary errors from a registry. Re-run just that name and the field usually resolves.
+EUIPO, Instagram and TikTok always return `null` with a link, because they block automated checks. Elsewhere, `null` means a rate limit or temporary error - re-run just that name and the field usually resolves.
 
 **Can I check names with spaces or punctuation?**
 Yes — the display name is preserved, but the slug (lowercased, alphanumeric-only) is what's used for domains and handles.
