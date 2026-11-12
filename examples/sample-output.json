@@ -1,0 +1,179 @@
+[
+  {
+    "brandName": "Zarvexiq",
+    "slug": "zarvexiq",
+    "domains": [
+      {
+        "host": "zarvexiq.com",
+        "available": true
+      },
+      {
+        "host": "zarvexiq.io",
+        "available": true
+      },
+      {
+        "host": "zarvexiq.ai",
+        "available": true
+      },
+      {
+        "host": "zarvexiq.co",
+        "available": true
+      },
+      {
+        "host": "zarvexiq.app",
+        "available": true
+      },
+      {
+        "host": "zarvexiq.dev",
+        "available": true
+      }
+    ],
+    "trademarks": [
+      {
+        "registry": "USPTO",
+        "available": true,
+        "exactMatches": 0,
+        "similarMarks": 0,
+        "liveMarks": [],
+        "searchUrl": "https://tmsearch.uspto.gov/search/search-information?searchString=Zarvexiq"
+      },
+      {
+        "registry": "EUIPO",
+        "available": null,
+        "note": "EUIPO has no public search API - open searchUrl to check manually",
+        "searchUrl": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&offices=EM&basicSearch=Zarvexiq"
+      }
+    ],
+    "socials": [
+      {
+        "platform": "twitter",
+        "handle": "zarvexiq",
+        "url": "https://x.com/zarvexiq",
+        "httpStatus": 404,
+        "available": true
+      },
+      {
+        "platform": "instagram",
+        "handle": "zarvexiq",
+        "url": "https://www.instagram.com/zarvexiq/",
+        "httpStatus": 429,
+        "available": null,
+        "note": "Instagram blocked the automated check - open the URL to verify"
+      },
+      {
+        "platform": "github",
+        "handle": "zarvexiq",
+        "url": "https://github.com/zarvexiq",
+        "httpStatus": 404,
+        "available": true
+      },
+      {
+        "platform": "youtube",
+        "handle": "zarvexiq",
+        "url": "https://www.youtube.com/@zarvexiq",
+        "httpStatus": 404,
+        "available": true
+      },
+      {
+        "platform": "tiktok",
+        "handle": "zarvexiq",
+        "url": "https://www.tiktok.com/@zarvexiq",
+        "available": null,
+        "note": "TikTok blocks automated checks - open the URL to verify"
+      }
+    ],
+    "checkedAt": "2026-11-12T20:50:32.801Z"
+  },
+  {
+    "brandName": "Lumenforge",
+    "slug": "lumenforge",
+    "domains": [
+      {
+        "host": "lumenforge.com",
+        "available": false
+      },
+      {
+        "host": "lumenforge.io",
+        "available": false
+      },
+      {
+        "host": "lumenforge.ai",
+        "available": false
+      },
+      {
+        "host": "lumenforge.co",
+        "available": true
+      },
+      {
+        "host": "lumenforge.app",
+        "available": true
+      },
+      {
+        "host": "lumenforge.dev",
+        "available": false
+      }
+    ],
+    "trademarks": [
+      {
+        "registry": "USPTO",
+        "available": false,
+        "exactMatches": 1,
+        "similarMarks": 1,
+        "liveMarks": [
+          {
+            "mark": "LUMENFORGE",
+            "status": "NEW APPLICATION - RECORD INITIALIZED NOT ASSIGNED TO EXAMINER",
+            "owner": "LumenForge Advisors LLC (LIMITED LIABILITY COMPANY; South Carolina, USA)",
+            "filed": "2026-10-30"
+          }
+        ],
+        "searchUrl": "https://tmsearch.uspto.gov/search/search-information?searchString=Lumenforge"
+      },
+      {
+        "registry": "EUIPO",
+        "available": null,
+        "note": "EUIPO has no public search API - open searchUrl to check manually",
+        "searchUrl": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&offices=EM&basicSearch=Lumenforge"
+      }
+    ],
+    "socials": [
+      {
+        "platform": "twitter",
+        "handle": "lumenforge",
+        "url": "https://x.com/lumenforge",
+        "httpStatus": 200,
+        "available": false
+      },
+      {
+        "platform": "instagram",
+        "handle": "lumenforge",
+        "url": "https://www.instagram.com/lumenforge/",
+        "httpStatus": 429,
+        "available": null,
+        "note": "Instagram blocked the automated check - open the URL to verify"
+      },
+      {
+        "platform": "github",
+        "handle": "lumenforge",
+        "url": "https://github.com/lumenforge",
+        "httpStatus": 200,
+        "available": false
+      },
+      {
+        "platform": "youtube",
+        "handle": "lumenforge",
+        "url": "https://www.youtube.com/@lumenforge",
+        "httpStatus": 200,
+        "available": false
+      },
+      {
+        "platform": "tiktok",
+        "handle": "lumenforge",
+        "url": "https://www.tiktok.com/@lumenforge",
+        "available": null,
+        "note": "TikTok blocks automated checks - open the URL to verify"
+      }
+    ],
+    "checkedAt": "2026-11-12T20:50:32.944Z"
+  }
+]
